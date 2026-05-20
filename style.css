@@ -22,8 +22,7 @@ html{
 }
 
 body{
-    font-family: 'Poppins',sans-serif;/*•	الغرض: تعيين حجم الخط الأساسي إلى 10px (يسهل الحسابات النسبية)
-                                         وتمكين سلاسة التمرير. كما يتم تعيين خط الجسم إلى "Poppins" ولون النص إلى الأبيض.*/
+    font-family: 'Poppins',sans-serif;
     color: var(--pure-white);
 }
 
@@ -34,25 +33,16 @@ body{
 /* imp! CSS VARIABLES */
 
 :root{
-    /* imp! COLOR
-    
-    : تعريف متغيرات CSS للألوان، أحجام الخطوط، الأوزان، الهوامش، والحشوات لسهولة الاستخدام والتغيير لاحقًا
-    
-    
-    
-    */
     --primary-color: #341d0a;
     --secondary-color: #b68834;
     --pure-white: #fff;
     --black-color: #222222;
     --star-yellow: #FFA500;
-    /*imp! FONT SIZE */
     --fs-h1: 6rem;
     --fs-h2: 3.9rem;
     --fs-h3: 1.8rem;
     --fs-1-8: 1.8rem;
     --fs-1-4: 1.4rem;
-    /*imp! FONT-WEIGHT */
     --fw-very-light: 200;
     --fw-light: 300;
     --fw-regular: 400;
@@ -60,15 +50,11 @@ body{
     --fw-bold: 600;
     --fw-extra-bold: 700;
     --fw-black: 900;
-    /* imp! MARGIN */
     --common-margin-top: 8rem;
-    /*imp! PADDING */
     --common-padding-top: 20rem;
     --common-padding-top-1: 12rem;
 
 }
-
-/*imp! COMMON CSS */
 
 .white-clr{
     color: var(--pure-white);
@@ -116,8 +102,6 @@ p{
     text-align: center;
 }
 
-/*imp! TOPBAR CSS */
-
 .header-section{
     position: fixed;
     top: 0;
@@ -150,8 +134,6 @@ p{
 .header-section__top-bar-text li:not(:last-child){
     margin-right: 3rem;
 }
-
-/*imp! NAVBAR CSS */
 
 .header-section__nav{
     display: flex;
@@ -191,11 +173,9 @@ p{
     font-size: var(--fs-1-4);
 }
 
-/*imp! SECTION-1 CSS */
-
 .section-1{
     padding-top: 18rem;
-    background-image: url(./Images/hero-section-banner.webp);
+    background-image: url(hero-section-banner.webp);
     background-size: cover;
     height: 68.1rem;
 }
@@ -223,8 +203,6 @@ p{
     font-weight: var(--fw-500);
     cursor: pointer;
 }
-
-/*imp! SECTION-2 CSS */
 
 .section-2{
     display: flex;
@@ -267,8 +245,6 @@ p{
     color: var(--pure-white);
 }
 
-/*imp! SECTION-3 CSS */
-
 .section-3{
     padding-top: var(--common-padding-top);
 }
@@ -278,7 +254,7 @@ p{
 }
 
 .section-3__card-main-div{
-    display: grid; /*  تقسم الصفحة  */
+    display: grid;
     grid-template-columns: repeat(auto-fit,34rem);
     gap: 4rem;
     margin-top: var(--common-margin-top);
@@ -306,8 +282,6 @@ p{
     margin-bottom: 2rem;
 }
 
-/*imp! SECTION-4 CSS */
-
 .section-4__img-div{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -322,8 +296,6 @@ p{
 .section-4__img-div img:nth-child(3){
     margin-top: -14rem;
 }
-
-/*imp! SECTION-5 CSS */
 
 .section-5{
     background-color: var(--primary-color);
@@ -384,8 +356,6 @@ i.fa-star{
     left: 0.7rem;
 }
 
-/*imp! SECTION-6 CSS */
-
 .section-6{
     padding-top: var(--common-padding-top-1);
 }
@@ -434,10 +404,8 @@ i.fa-star{
     margin: 1.25rem 0 2rem;
 }
 
-/*imp! FOOTER-SECTION */
-
 .footer{
-    background-image: url(./Images/footer-banner.webp);
+    background-image: url(footer-banner.webp);
     margin-top: var(--common-margin-top);
     background-size: cover;
 }
@@ -520,8 +488,6 @@ input:focus{
     color: var(--pure-white);
 }
 
-/*imp! TABLET MEDIA QUERY */
-
 @media screen and (max-width: 1141px) {
     :root{
         --common-padding-top-1: 10rem;
@@ -603,16 +569,6 @@ input:focus{
         margin-right: 1.5rem;
     }
 }
-
-/*imp! PHONE MEDIA QUERY 
-
-
-
-
-•	الغرض: تعريف أنماط خاصة بالأجهزة ذات الشاشات الصغيرة (مثل الهواتف المحمولة)
- لضمان استجابة التصميم وتوافقه مع مختلف أحجام الشاشات.
-
-*/
 
 @media screen and (max-width: 600px){
     :root{
